@@ -23,14 +23,27 @@
         &__b-margin-until-medium {
             margin-bottom: 0;
         }
+
+        &__medium-6 {
+            float:left;
+            width: 50%;
+        }
     }
 
     &--gutters > div {
         padding-right: 65px;
     }
 
+    &--gutters-large > div {
+        padding-right: 150px;
+    }
+
     &--gutters {
         margin-right: -65px;
+    }
+
+    &--gutters-large {
+        margin-right: -150px;
     }
 
     &__b-margin-until-medium {
