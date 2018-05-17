@@ -18,6 +18,11 @@ gulp.task("watch",function(){
 	watch("./app/assets/styles/**/*.css",function(){ 
 		gulp.start("cssInject");
 	});
+
+	//以下监听器将会监听js文件的变化
+	watch("./app/assets/scripts/**/*.js", function(){ 
+		gulp.start("scripts");
+	});
 });
 
 gulp.task("cssInject",["styles"],function(){
